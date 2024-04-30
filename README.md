@@ -1,4 +1,4 @@
-Classes for reading 3d objects/worlds 
+Classes for manipulating 3d objects 
 ===============
 
 Work in progress...
