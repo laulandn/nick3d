@@ -1,0 +1,44 @@
+
+#define DEBUG_OUT std::cerr
+//#define DEBUG_OUT *aNullStream
+
+
+#ifdef DEBUG_VERBOSE
+#undef DEBUG_VERBOSE
+#endif
+
+
+#ifdef NICK_USE_NICK3D
+
+
+#include "AFace3D.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+//  AFace3D class
+////////////////////////////////////////////////////////////////////////////////
+
+
+AFace3D::AFace3D()
+{
+  //DEBUG_<<"AFace3D created!\n";
+  a=0;  b=0;  c=0;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//  AFaceInfo3D class
+////////////////////////////////////////////////////////////////////////////////
+
+
+AFaceInfo3D::AFaceInfo3D()
+{
+  //DEBUG_<<"AFaceInfo3D created!\n";
+  surf=0;
+  fRed=1.0;  fGreen=0.0;  fBlue=.5;
+  textID=0;
+}
+
+
+#endif // NICK_USE_NICK3D
+
